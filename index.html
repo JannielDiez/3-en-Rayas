@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="lib/jQuery.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+<h1 class="title">3 en Rayas</h1>
+<div id="container">
+    <table id="frame">
+        <tr>
+            <td class="cell0" onclick="cell(0)">
+                <img id="c0">
+            </td>
+            <td class="cell1" onclick="cell(1)">
+                <img id="c1">
+            </td>
+            <td class="cell2" onclick="cell(2)">
+                <img style="outline: 0" id="c2" alt="">
+            </td>
+        </tr>
+        <tr>
+            <td class="cell3" onclick="cell(3)">
+                <img id="c3">
+            </td>
+            <td class="cell4" onclick="cell(4)">
+                <img id="c4">
+            </td>
+            <td class="cell5" onclick="cell(5)">
+                <img id="c5">
+            </td>
+        </tr>
+        <tr>
+            <td class="cell6" onclick="cell(6)">
+                <img id="c6">
+            </td>
+            <td class="cell7" onclick="cell(7)">
+                <img id="c7">
+            </td>
+            <td class="cell8" onclick="cell(8)">
+                <img id="c8">
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="containerWinner">
+    <h3 id="winner"></h3>
+</div>
+<div id="containerButton">
+    <button type="button" class="btn btn-dark" onclick="location.reload()">Start Over</button>
+</div>
+</body>
+<script src="js/function.js"></script>
+</html>
